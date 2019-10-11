@@ -1,0 +1,27 @@
+body
+{
+	background-color: #DCDCDC;
+}
+
+table
+{
+	border: solid black 1px;
+	background-color: #f2c9cd;
+}
+
+input, button
+{
+	background-color: #bfddf2;
+}
+
+th
+{
+	border: solid black 1px;
+}
+
+td
+{
+	border: solid black 1px;
+	background-color: #bfddf2;
+}
+

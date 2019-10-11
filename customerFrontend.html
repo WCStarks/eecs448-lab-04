@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Store</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="formChecker.js"> </script>
+  </head>
+  <body>
+    <form onsubmit=" return check()" action="customerBackend.php" method="post" >
+      Username: <input type="text" name="user" id="user">
+      Password: <input type="password" name="pass" id="pass"> <br> <br>
+      <table>
+        <tr>
+          <th> Item </th>
+          <th> Price </th>
+          <th> Quantity </th>
+        </tr>
+        <tr>
+          <td> Item 1 </td>
+          <td> $9.99 </td>
+          <td> <input class="item" type="text" name="item1"> </td>
+        </tr>
+        <tr>
+          <td> Item 2 </td>
+          <td> $14.99 </td>
+          <td> <input class="item" type="text" name="item2"> </td>
+        </tr>
+        <tr>
+          <td> Item 3 </td>
+          <td> $3.99 </td>
+          <td> <input class="item" type="text" name="item3"> </td>
+        <tr>
+      </table>
+	  <br>
+      Select Shipping
+      <input type="radio" name="shipping" value="7 day"> Free 7 day
+      <input type="radio" name="shipping" value="Over Night"> $50.00 over night
+      <input type="radio" name="shipping" value="3 Day"> $5.00 three day
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <button onclick="reset()">Reset</button>
+  </body>
+</html>
